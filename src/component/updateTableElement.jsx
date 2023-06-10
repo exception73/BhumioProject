@@ -7,8 +7,27 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-const UpdateTableElement = ({heading, datacopy}) => {
-    // datacopy.pop();
+const UpdateTableElement = ({heading, datacopy, setdatacopy, updateState, setupdateState}) => {
+    var tempData = JSON.parse(JSON.stringify(datacopy))
+    const updateStockBHandler = (index, event) => {
+      tempData[index]["LOC B STOCK "] = event.target.value;
+    }
+    const updateStockAHandler = (index, event) => {
+      tempData[index]["LOCATION A STOCK"] = event.target.value;
+    }
+
+    const handleSave = () =>{
+      setdatacopy(tempData);
+      setupdateState(!updateState);
+      
+    }
+
+    const cancelHandle = () => {
+      setupdateState(!updateState);
+    }
+
+
+
   return (
 
     <TableContainer sx={{margin: 1}} component={Paper}>
@@ -42,12 +61,15 @@ const UpdateTableElement = ({heading, datacopy}) => {
              <TableCell>{rows["Part #"]}</TableCell>
              <TableCell>{rows["Alt.Part#"]}</TableCell>
              <TableCell>{rows["Model"]}</TableCell>
-             <TableCell><input type="number" placeholder={rows["LOCATION A STOCK"]} onChange={(e) => {rows["LOCATION A STOCK"] = e.target.value}} /></TableCell>
-             <TableCell><input type="number" placeholder={rows["LOC B STOCK "]} onChange={(e) => {rows["LOC B STOCK "] = e.target.value}} /></TableCell>
+             <TableCell><input type="number" placeholder={rows["LOCATION A STOCK"]} onChange={(e) => {updateStockAHandler(index, e)}} /></TableCell>
+             <TableCell><input type="number" placeholder={rows["LOC B STOCK "]} onChange={(e) => {updateStockBHandler(index, e)}} /></TableCell>
           
           </TableRow>
         ))}
       </TableBody>
+
+      <button onClick={handleSave} style={{background:"aqua", margin:"10px", padding: "10px", border:"none"}}>Save</button>
+      <button onClick={cancelHandle} style={{background:"aqua", padding: "10px", border:"none"}}>Cancel</button>
     </Table>
     
   </TableContainer>

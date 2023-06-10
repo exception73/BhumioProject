@@ -17,6 +17,7 @@ export default function Home() {
   const [query, setquery] = useState("");
   const [datacopy, setdatacopy] = useState([]);
   const [update, setupdate] = useState(false);
+ 
 
   const handleFileChange = (e) => {
     setError("");
@@ -120,11 +121,10 @@ export default function Home() {
 
     {
         (update ?    <div>
-        <h5>update inventory</h5>
-        <UpdateTableElement heading={heading} datacopy={datacopy} />
+        <h1 style={{textAlign:"center" , background:"lightgray"}}>update inventory</h1>
+        <UpdateTableElement heading={heading} setdatacopy = {setdatacopy} datacopy={datacopy} updateState = {update} setupdateState = {setupdate}/>
         <div>
-          <button  style={{background:"aqua", margin:"10px", padding: "10px", border:"none"}}>Save</button>
-          <button onClick={() => setupdate(!update)} style={{background:"aqua", padding: "10px", border:"none"}}>Cancel</button>
+        
         </div>
       </div> :       
     <TableEle heading={heading} datacopy={datacopy} />
