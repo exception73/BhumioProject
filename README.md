@@ -1,9 +1,12 @@
 # landing page before uploading the csv file
-![image](https://github.com/exception73/BhumioProject/assets/109818831/37faae34-7d21-4b59-a9cf-978c84b73e41)
+![image](https://github.com/exception73/BhumioProject/assets/109818831/2dd7d002-28df-44d6-8ddc-d9345acab672)
+
 # page after uploading the csv file, by clicking on the import csv button
-![image](https://github.com/exception73/BhumioProject/assets/109818831/1d4218e6-c78f-497a-a3f6-4d0746289ca1)
+![image](https://github.com/exception73/BhumioProject/assets/109818831/e3ca6578-a644-4492-8443-80279161099e)
+
 # updating the stock page
-![image](https://github.com/exception73/BhumioProject/assets/109818831/500d83ad-ea5f-462e-a280-8296bcbf3e20)
+![image](https://github.com/exception73/BhumioProject/assets/109818831/243e995d-094a-4d46-bcf4-2fd9ca762d84)
+
 
 
 
