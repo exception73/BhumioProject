@@ -68,8 +68,10 @@ const UpdateTableElement = ({heading, datacopy, setdatacopy, updateState, setupd
         ))}
       </TableBody>
 
-      <button onClick={handleSave} style={{background:"aqua", margin:"10px", padding: "10px", border:"none"}}>Save</button>
+     <div style={{textAlign:"center"}}>
+     <button onClick={handleSave} style={{background:"aqua", margin:"10px", padding: "10px", border:"none"}}>Save</button>
       <button onClick={cancelHandle} style={{background:"aqua", padding: "10px", border:"none"}}>Cancel</button>
+     </div>
     </Table>
     
   </TableContainer>
