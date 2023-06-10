@@ -1,3 +1,10 @@
+1) first select the csv file, using the choose file button.
+2) after that to display the file data on screen click on "import csv/ show data" button
+3) to download the displayed/modified csv click on "export CSV/ download CSV" button
+4) to filter the data, fill the input field with "Alt.Part#" or "Part #" value of minimum length of 3, else window alert will be shown.
+5) to show the filtered data click on filter button.
+6) to modify the data click on update inventory, and from their you can change the stockA, and stockB of product.
+
 # landing page before uploading the csv file
 ![image](https://github.com/exception73/BhumioProject/assets/109818831/2dd7d002-28df-44d6-8ddc-d9345acab672)
 
