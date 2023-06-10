@@ -1,3 +1,12 @@
+# landing page before uploading the csv file
+![image](https://github.com/exception73/BhumioProject/assets/109818831/37faae34-7d21-4b59-a9cf-978c84b73e41)
+# page after uploading the csv file, by clicking on the import csv button
+![image](https://github.com/exception73/BhumioProject/assets/109818831/1d4218e6-c78f-497a-a3f6-4d0746289ca1)
+# updating the stock page
+![image](https://github.com/exception73/BhumioProject/assets/109818831/500d83ad-ea5f-462e-a280-8296bcbf3e20)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
