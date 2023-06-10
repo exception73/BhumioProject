@@ -96,9 +96,9 @@ export default function Home() {
           name="file"
           type="File"
         />
-        <button style={{ background:"white", margin: "10px", color:"blue", padding:"5px 10px" }} onClick={handleParse}>Import CSV</button>
+        <button style={{ background:"white", margin: "10px", color:"blue", padding:"5px 10px" }} onClick={handleParse}>Import CSV / show data</button>
         <CSVLink data={datacopy} filename="table.csv">
-      <button style={{ background:"blue", color:"white", padding:"5px 10px" }} >Export CSV</button>
+      <button style={{ background:"blue", color:"white", padding:"5px 10px" }} >Export CSV / download CSV</button>
     </CSVLink>
         <div>
           
